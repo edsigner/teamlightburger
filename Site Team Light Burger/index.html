@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+  <html lang="pt-BR">
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	  <link href="https://fonts.googleapis.com/css?family=Passion+One" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+	  <title>Team Light Burger</title> 	
+	   <link rel="shortcut icon" href="img/logo.png" />
+      <!--Let browser know website is optimized for mobile-->
+	  <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	  <script>
+	 function refresh() {
+             javascript:history.go(0);
+            }	
+	 </script> 
+    </head>
+
+    <body>
+	
+	<!--Barra de navegação -->  	
+	
+	<nav class="nav-extended white z-depth-0">
+	<a href="#" data-activates="mobile-demo" class="button-collapse waves-effect waves-light red-text textEsc" style="margin-top:10px;"><i class="material-icons">menu</i></a>
+		<div class="nav-wrapper container center">
+			
+				
+				<img id="logo" class="responsive-img" src="img/logo.png" style="width:100px; margin-top:10px;"> 
+				
+				<br>
+				<div class="">
+				
+				
+					<input class="with-gap" name="group3" type="radio" id="escuro" onclick="Materialize.toast('Você alterou para o modo escuro', 2000)"/>
+					<label for="escuro">Escuro</label>
+					  
+					<input class="with-gap" name="group3" type="radio" id="claro" onclick="Materialize.toast('Você alterou para o modo claro', 2000)" checked />
+					<label for="claro">Claro</label>
+				</div>
+				  
+				
+		</div>		  
+    
+		
+	</nav>
+	 <!--Tabs -->	
+		<div class="center" > 
+			<ul class="tabs hide-on-med-and-down">
+						<li class="tab"><a class="active red-text textEsc" href="#test1"><h6 class="center-align valign-wrapper"><i class="material-icons left">home</i>Início</h6></a></li>
+						<li class="tab"><a class="red-text textEsc" href="#test3"><h6 class="center-align valign-wrapper"><i class="material-icons left">contacts</i>Contato</h6></a></li>
+						<li class="tab"><a class="red-text textEsc" href="#test4"><h6 class="center-align valign-wrapper"><i class="material-icons left">info</i>Quem somos</h6></a></li>
+						
+			</ul>
+		</div>
+	<ul class="side-nav btnEsc" id="mobile-demo">
+		  <div class="center">
+			<img class="responsive-img" src="img/logo.png" style="width:100px; margin-top:10px;">
+			</div>
+			<li><a href="#test1" onclick="refresh()">Início<i class="material-icons left">home</i></a></li>
+			<li><a href="#test3" onclick="refresh()">Contato<i class="material-icons left">contacts</i></a></li>
+			<li><a href="#test4" onclick="refresh()">Quem somos<i class="material-icons left">info</i></a></li>
+			
+		  </ul>
+	<!--Botão fixo para abrir o modal -->
+	<div class="fixed-action-btn">
+		<a id="menu" class="btnEsc pulse btn-floating btn-large blue modal-trigger tooltipped" data-position="left" data-delay="0" data-tooltip="Veja nosso cardápio" href="#car_modal">
+		  <i class="btnEsc1 large material-icons">restaurant_menu</i>
+		</a>
+	</div>
+	
+	 <!-- Tap Target Structure -->
+  <div class="tap-target blue white-text" data-activates="menu" style="background-image: url('img/background-hamburger.png'); background-repeat: no-repeat;">
+    <div class="tap-target-content">
+      <h5>Bem vindo</h5>
+      <p>Veja nosso cardápio e delicie um de nossos hamburguers</p>
+    </div>
+  </div>
+	  
+	<div id="car_modal" class="modal bottom-sheet">
+	
+    <div class="modal-content">
+      <div class="row">
+	  <h5 class="left-align">Nosso cardápio</h5>
+		<ul class="collapsible col m12 s12" data-collapsible="accordion">
+			<li>
+			  <div class="collapsible-header"><i class="material-icons">restaurant_menu</i>
+			  <h6 class="left-align">X-Bacon</h6>
+			  
+			  </div>
+			  <div class="collapsible-body center">
+			  <span>Pão, hambúrguer, presunto, queijo, bacon, alface, tomate, milho e batata palha</span>
+			  
+			  </div>
+				
+			</li>
+			<li>
+			  <div class="collapsible-header"><i class="material-icons">restaurant_menu</i>X-Burger</div>
+			  <div class="collapsible-body center">
+			  <span>Pão, hamburguer, queijo, alface, tomate, milho e batata palha</span>
+			  
+			  </div>
+			</li>
+			<li>
+			  <div class="collapsible-header"><i class="material-icons">restaurant_menu</i>X-Salada</div>
+			  <div class="collapsible-body center">
+			  <span>Pão, hambúrger, queijo, presunto e salada</span>
+			  
+			  </div>
+			</li>
+		  </ul>
+		  
+		  </div>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">
+	  <i class="material-icons right">highlight_off</i>Fechar</a>
+    </div>
+  </div>	
+  
+
+		
+	
+	  <div id="test1" class="col s12">
+		<!--Slide -->
+		
+		<div class="slider">
+			<ul class="slides" >
+			  <li>
+				<img class="responsive-img" src="img/slide2.png"> <!-- random image -->
+				<div class="caption right-align">
+				<a class="btnEsc pulse waves-effect blue btn-large modal-trigger" style="border-radius:50px;" href="#modal1">Faça seu pedido<i class="material-icons left">add_shopping_cart</i></a>
+				  
+				</div>
+			  </li>
+			  <li>
+				<img class="responsive-img" src="img/slide3.png"> <!-- random image -->
+				<div class="caption left-align">
+				<a class="btnEsc pulse waves-effect blue btn-large modal-trigger" style="border-radius:50px;" href="#modal1">Faça seu pedido<i class="material-icons left">add_shopping_cart</i></a>
+				  
+				</div>
+			  </li>
+			  <li>
+				<img class="responsive-img" src="img/local1.jpg"> <!-- random image -->
+				<div class="caption center-align">
+				<a class="btnEsc pulse waves-effect blue btn-large modal-trigger" style="border-radius:50px;" href="#modal1">Faça seu pedido<i class="material-icons left">add_shopping_cart</i></a>
+				  
+				</div>
+			  </li>
+			</ul>
+		</div>
+		
+		<div class="container">
+          <div class="card white escuro1">
+            <div class="card-content escuro1 black-text">
+              <span class="card-title center">Assine para receber promoções</span>
+			  
+			    <div class="row">
+				  <div class="col s12 m6">
+					<form class="col s12 m12 center">
+						  <div class="row ">
+							<div class="input-field left col s12 m12">
+							  <input id="last_name" type="text" class="validate" required>
+							  <label for="last_name">Seu nome</label>
+							</div>
+						  </div>
+						 
+						  <div class="row">
+							<div class="input-field left col s12 m12">
+							  <input id="email" type="email" class="validate" required>
+							  <label for="email">Email</label>
+							</div>
+						  </div>
+						  
+						  
+							<button class="btnEsc btn waves-effect red" type="submit" name="action">Assinar
+								<i class="material-icons right">send</i>
+							</button>  
+						</form>
+				  </div>
+				  
+				  <div class="col s12 m6 right">
+					<img id="promo" class="responsive-img" src="img/promo1.png">
+				  </div>
+				  
+			    </div>
+			  
+			  
+				  
+				  
+				</div>
+			  
+              
+			  
+            </div>
+            
+					
+				  
+          </div>
+		  
+        
+		
+      </div>
+            
+		
+
+		  <!-- Modal Structure -->
+		  <div id="modal1" class="modal white-text center">
+		  
+			<div class="modal-content" style="background-image:url('img/burger1.jpg');">
+			<i class="material-icons medium">event_note</i>
+			  <h5 id="h5">Faça seu pedido</h5>
+			  
+			  <form id="comida">
+			  <div class="row ">
+				  <div class="input-field">
+					
+					
+					<select class="icons col s12 m6" required>
+					
+					  <option value="" disabled selected>Selecione seu Hambúrger</option>
+					  <option value="" data-icon="img/xsalada.png" class="circle">X-Salada</option>
+					  <option value="" data-icon="img/xburger.png" class="circle">X-Burger</option>
+					  <option value="" data-icon="img/xbacon.png" class="circle">X-Bacon</option>
+					</select>
+					
+					
+					<select class="icons col s12 m6" required>
+					  <option value="" disabled selected>Selecione seu Suco</option>
+					  <option value="" data-icon="img/laranja.png" class="circle">Laranja</option>
+					  <option value="" data-icon="img/maracuja.png" class="circle">Maracujá</option>
+					  <option value="" data-icon="img/goiaba.png" class="circle">Goiaba</option>
+					</select>
+					
+				</div>
+					
+				</div>
+				
+				<div class="row">
+					<div class="input-field col s12 m6">
+					  <input id="nome" type="text" class="validate">
+					  <label for="nome">Seu nome</label>
+					</div>
+					<div class="input-field col s12 m6">
+					  <input id="phone" name="phone" type="text" class="validate" required>
+					  <label for="phone">Telefone</label>
+					</div>
+				  </div>
+				
+				<div class="row">
+					<div class="input-field col s12 m12">
+					  <input id="nome" type="text" class="phone validate" required>
+					  <label for="nome">Endereço</label>
+					</div>
+					
+				  </div>
+					
+				  <div class="row">
+					
+					
+						<button id="pedido" class="btn waves-effect waves-light red" style="border-radius:20px;" type="submit" onclick="refresh()">Finalizar pedido
+							<i class="material-icons right">send</i>
+						</button>
+					
+				  </div>
+				  
+				  </form>
+			  
+			</div>
+			
+			
+		  </div>
+		  
+		  <div class="card white center m12 s12" style="background-image: url('img/balcao.jpg'); margin:0; z-index:1;">
+		  
+		  <nav class="escuro red z-depth-0">
+			<div class="nav-wrapper container center-align ">
+			  <form>
+				<div class="input-field ">
+					
+				  <input id="autocomplete-input" class="autocomplete" type="search"  required placeholder="Procure seu hambúrguer" style="text-align:center; font-size:20px;">
+				  <label class="label-icon" for="autocomplete-input"><i class="material-icons" style="margin:-10px; margin-left:10px;">search</i></label>
+				  <i class="material-icons">close</i>
+				</div>
+			  </form>
+			</div>
+		  </nav>
+		  
+			 <div class="container">
+			  <div class="carousel" style="font-family: 'Passion One', cursive;">
+					<a class="carousel-item" href="#one!">
+						<h4 class="center white-text">X-Salada</h4>
+						<h4 class="center yellow-text">R$ 15,00</h4>
+						<img class="responsive-img" src="img/xsalada.png">
+					</a>
+					<a class="carousel-item" href="#two!">
+						<h4 class="center white-text">X-Bacon</h4>
+						<h4 class="center yellow-text">R$ 20,00</h4>
+						<img class="responsive-img" src="img/xbacon.png">
+					</a>
+					<a class="carousel-item" href="#three!">
+						<h4 class="center white-text">X-Burger</h4>
+						<h4 class="center yellow-text">R$ 10,00</h4>
+						<img class="responsive-img" src="img/xburger.png">
+					</a>
+					
+			 </div>
+		 </div>
+		</div>
+		
+	  </div>
+	   
+	  
+	  <div id="test3" class="col s12 container">
+		  
+	  </div>
+	  <div id="test4" class="col s12 container">
+		  
+	  </div>
+	  <!--Rodapé -->
+	  <footer class="page-footer red">
+          <div class="container">
+		  
+            <div class="row">
+              <div class="col s12 l6 m8">
+			  <div class="center">
+			  <h5>Localização<i class="material-icons">place</i></h5>
+			 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.018114294857!2d-38.605300685824275!3d-3.8061626972311458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c74da4f6dfbfe9%3A0xb12cd2389ce5b6e5!2sTrunfo+Desenvolvimento!5e0!3m2!1spt-BR!2sbr!4v1502638439859" 
+				width="100%" height="320px" frameborder="0" style="border-radius:20px;" allowfullscreen></iframe>
+              </div>  
+              </div>
+              <div class="col l4 offset-l2 s12 m4">
+                <h5 class="white-text">Tecnologias usadas</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="https://www.w3schools.com/html/html5_intro.asp">HTML5</a></li>
+                  <li><a class="grey-text text-lighten-3" href="https://www.w3schools.com/css/css3_intro.asp">CSS3</a></li>
+                  <li><a class="grey-text text-lighten-3" href="https://www.javascript.com/">JavaScript</a></li>
+                  <li><a class="grey-text text-lighten-3" href="https://jquery.com/">JQuery</a></li>
+				  <li><a class="grey-text text-lighten-3" href="http://materializecss.com/">Materialize</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+		  <div class="center">
+			<a id="topo" class="btnEsc waves-effect blue btn-large" style="border-radius:50px;">Voltar para o início<i class="material-icons left">keyboard_arrow_up</i></a>
+          </div>
+		  <div class="footer-copyright">
+            <div class="container center">
+            © 2017 Desenvolvido por <a class="white-text" href="https://www.facebook.com/Edson.D1as">Edson Dias</a>
+            
+            </div>
+          </div>
+        </footer>
+	 
+      <!--Import jQuery before materialize.js-->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="https://raw.githubusercontent.com/digitalBush/jquery.maskedinput/1.4.1/dist/jquery.maskedinput.min.js"></script>
+	<script type="text/javascript" src="js/materialize.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+    </body>
+  </html>
